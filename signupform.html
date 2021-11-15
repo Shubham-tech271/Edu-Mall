@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+    <title> SignUp </title>
+        <script src="js\login2.js"></script>
+
+
+<style>
+    *{
+    padding: 15px;
+    margin: 0px ;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+body{
+    background: url('../images/book-1659717_1920.jpg') no-repeat ;
+    
+    background-size: cover;
+
+}
+a{
+    color: turquoise;
+}
+.login-form{
+    background-color:rgb(193, 194, 179) ;
+    width: 350px;
+    top: 0;
+    left: 0;
+    margin:0 auto;
+    position: relative;
+    color: rgb(255, 255, 254);
+}
+.login-form h1{
+    font-size: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0px 0;
+}
+.login-form p{
+    font-size: 20px;
+    margin: 15px 0;
+}
+.login-form input{
+    font-size: 16px;
+    width: 100%;
+    padding: 15px 3px;
+    border: 0;
+    outline: none;
+    border-radius: 5px;
+}
+.login-form button{
+    font-size: 18px;
+    font-weight: bold;
+    margin: 20px 0;
+    padding: 10px 15px;
+    width: 50%;
+
+}
+
+</style>
+
+
+    </head>
+    <body>
+<div class="login-form">
+<h1> LogIn/Sign-up </h1>
+<form action="login.html" method="get">
+<p>User name</p>
+<input type="text" name="user" placeholder="User name" id="username">
+<p>Password</p>
+<input type="password" name="password" placeholder="Password" id="password">
+<p>E-mail id*</p>
+<input type="text" name="email" placeholder="e-mail" id="email">
+<p>Mobile no.*</p>
+<input type="number" name="number" placeholder="Mobile number" id="Mobile">
+<button type="submit" onclick="validate()">Sign-up</button>
+<p>Already a member?&nbsp;<a href="login.html">LogIn</a></p>
+</form>
+</div>
+      </body>
+</html>

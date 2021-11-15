@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="Css\tablestyle.css">
+    </head>
+    <body>
+<section id="hero">
+<div class="hero container">
+<div>
+<h1> Category-Wise <span></span></h1>
+<h1> Table is below! <span></span></h1>
+<h1> Have a look <span></span></h1>
+<a href="#table" type="button" class="cta"> Donate-books </a>
+
+</div></section>
+
+
+
+  <p>  <section id="table">
+    <div class="resource-table">
+    <div>
+    <h1> Categories For Diffrent Resources </h1>
+    <table>
+  <tr>
+    <th> Subject </th>
+    <th> Book name </th>
+    <th> Size of file </th>
+  </tr>
+  <tr>
+    <td> Computer Science</td>
+    <td> C.S with python</td>
+    <td><a href="#"> 5 Mb</a></td>
+  </tr>
+  <tr>
+    <td> NEET </td>
+    <td> Ncert biology with fingertips</td>
+    <td><a href="#"> 2 Mb</a></td>
+  </tr>
+  <tr>
+    <td> JEE MAINS</td>
+    <td> Maths in 40 days </td>
+    <td><a href="#"> 4.5 Mb</a></td>
+  </tr>
+  <tr>
+    <td> GATE exam </td>
+    <td> Gate c.s/It 2021</td>
+    <td><a href="#"> 11 Mb</a></td>
+  </tr>
+  <tr>
+    <td> 12th Boards</td>
+    <td> Ncerts</td>
+    <td><a href="#"> 50 Mb</a></td>
+  </tr>
+  <tr>
+    <td> 10th Boards</td>
+    <td> NCERT </td>
+    <td><a href="#"> 59 Mb</a></td>
+  </tr>
+</table>
+ </div>
+ <br>
+ <br>
+ <br>
+
+ <hr>
+ <br>
+ <br>
+ <br>
+<div class="table-resource">
+<div>
+<h1> Course Details </h1>
+
+<table>
+<tr>
+    <td> Course subject</td>
+    <td> Course_name</td>
+    <td> Join_link</td>
+  </tr>
+  
+  <tr>
+    <td> Computer Science</td>
+    <td> Python for everybody </td>
+    <td><a href="#"> Join link</a></td>
+  </tr>
+  
+  <tr>
+    <td> NEET </td>
+    <td> Entrance exam prep</td>
+    <td><a href="#"> Join link </a></td>
+  </tr>
+  
+  <tr>
+    <td> GATE Exam </td>
+    <td> Online course for gate </td>
+    <td><a href="#"> Join link </a></td>
+  </tr>
+    <tr>
+    <td> 12th Boards</td>
+    <td> Full Ncerts course </td>
+    <td><a href="#"> Join link </a></td>
+  </tr>
+
+    <tr>
+    <td> 10th Boards</td>
+    <td> Full Ncerts course </td>
+    <td><a href="#"> Join link </a></td>
+  </tr>
+
+    <tr>
+    <td> Personality Development </td>
+    <td> Raise your confidence </td>
+    <td><a href="#"> Join link </a></td>
+  </tr>
+  </table>
+</div>
+ </section></p>
+
+ <hr>
+ <section class="contact" id="Contact">
+     <h2 class="text-center" > Donate-books</h2>
+     <div class="form">
+      <form action="login.html" method="get">
+         <input class="form-input" type="text" name="name" id="name" placeholder="Name of the book">
+         <input class="form-input" type="text" name="phone" id="phone"placeholder="Publisher">
+         <input class="form-input" type="text" name="category" id="category"placeholder="category">
+         <input class="form-input" type="number" name="phone" id="phone"placeholder="phone no.">
+         <textarea class="form-input"name="text" id="text" cols="45" rows="5" placeholder="*If possible please tell us something about the book"></textarea>
+         <button class="btn btn-dark" id="btn-alert"> Donate </button>
+
+         <script>
+          var user_name = document.getElementById("name");
+          document.getElementById("btn-alert").addEventListener("click", function(){
+              var value=user_name.value.trim();
+              if(!value)
+                  alert("Name Cannot be empty!");
+              else
+                  alert("Thank you, donating book with book name " + value + "!");
+          });
+      </script>
+      </form>
+     </div>
+ </section>
+        
+       
+    </body>
+</html>
